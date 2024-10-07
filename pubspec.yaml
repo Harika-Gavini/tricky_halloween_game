@@ -24,7 +24,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/dark_background.png
-    - assets/images/ghost.png
-    - assets/images/pumpkin.png
-    - assets/images/bat.png
+    
+    - /Users/joisedivya/halloween_game/assets/ghost.png
+    - /Users/joisedivya/halloween_game/assets/pumpkin.png
+    - /Users/joisedivya/halloween_game/assets/bat.png
+    - /Users/joisedivya/halloween_game/assets/dark_background.png
