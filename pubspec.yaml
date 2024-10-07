@@ -1,7 +1,7 @@
 name: halloween_game
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  just_audio: ^ 0.9.18
+
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
@@ -20,12 +22,13 @@ dev_dependencies:
   flutter_lints: ^4.0.0
 
 flutter:
-
   uses-material-design: true
 
   assets:
-    
-    - /Users/joisedivya/halloween_game/assets/ghost.png
-    - /Users/joisedivya/halloween_game/assets/pumpkin.png
-    - /Users/joisedivya/halloween_game/assets/bat.png
-    - /Users/joisedivya/halloween_game/assets/dark_background.png
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/bat.png
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/dark_background.png
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/ghost.png
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/pumpkin.png
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/jumpscare.mp3
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/winning.mp3
+    - /Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/scary-background.mp3
