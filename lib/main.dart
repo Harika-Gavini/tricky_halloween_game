@@ -50,19 +50,22 @@ class _HalloweenHomePageState extends State<HalloweenHomePage> {
     _jumpScarePlayer = AudioPlayer();
     _successPlayer = AudioPlayer();
 
-    // Load and play the background music
-    await _backgroundPlayer.setAsset(
-        '/Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/scary-background.mp3');
+    try {
+      // Load and play the background music
+      await _backgroundPlayer.setAsset('assets/scary-background.mp3');
+      print("Background music loaded successfully.");
 
-    // Set background music to loop
-    _backgroundPlayer.setLoopMode(LoopMode.all);
-    _backgroundPlayer.play();
+      // Set background music to loop
+      _backgroundPlayer.setLoopMode(LoopMode.all);
+      await _backgroundPlayer.play();
+      print("Background music is playing.");
+    } catch (e) {
+      print("Error loading background music: $e");
+    }
 
     // Load the other sound effects
-    await _jumpScarePlayer.setAsset(
-        '/Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/jumpscare.mp3');
-    await _successPlayer.setAsset(
-        '/Users/harikagavini/Documents/gsu-course-work/mad/tricky_halloween_game/assets/winning.mp3');
+    await _jumpScarePlayer.setAsset('assets/jumpscare.mp3');
+    await _successPlayer.setAsset('assets/winning.mp3');
   }
 
   @override
